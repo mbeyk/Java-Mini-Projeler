@@ -1,0 +1,23 @@
+//Bu örnekte kullanıcıdan alınan beş sayının toplamı ve ortalaması hesaplanmaktadır.
+//while döngüsü kullanılarak kodlanmıştır.
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+        int sayac=0;
+        int toplam=0;
+        double ortalama;
+
+        while (sayac<5){
+            Scanner input=new Scanner(System.in);
+            System.out.print("Lütfen bir sayi giriniz: ");
+            int sayi=input.nextInt();
+            toplam+=sayi;
+            sayac++;
+        }
+        ortalama=toplam/5;
+        System.out.println("\nBeş sayının toplamı: "+toplam+"\nOrtalaması: "+ortalama);
+    }
+}
