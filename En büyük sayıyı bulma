@@ -1,0 +1,30 @@
+//Bu örnekte kullanıcıdan alınan üç sayı birbiri ile karşılaştırılarak en büyük sayı bulunması sağlanır.
+//if döngüsü kullanılarak kodlanmıştır.
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+        Scanner input=new Scanner(System.in);
+
+        System.out.print("1.Sayiyi giriniz: ");
+        int sayi1= input.nextInt();
+        System.out.print("2.Sayiyi giriniz: ");
+        int sayi2= input.nextInt();
+        System.out.print("3.Sayiyi giriniz: ");
+        int sayi3= input.nextInt();
+
+        int enBuyuk=sayi2;  //Bu kısımda girilen sayılardan bir tanesini rastgele en büyük seçiyoruz.
+        //Diğer sayıları enBuyuk ile karşılaştırarak sıralamayı bulacağız.
+
+        if(enBuyuk<sayi1){
+            enBuyuk=sayi1;
+        }
+        if(enBuyuk<sayi3){
+            enBuyuk=sayi3;
+        }
+        System.out.println("En büyük sayi: "+enBuyuk);
+
+    }
+}
