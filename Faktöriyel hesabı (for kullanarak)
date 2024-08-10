@@ -1,0 +1,22 @@
+//Bu örnekte kullanıcının girdiği sayının faktöriyelini heaplayan bir algoritma kurduk.
+//For döngüsü kullanılarak kodlanmıştır.
+
+import java.util.Scanner;
+
+public class Main{
+    public static void main(String[] args){
+
+        Scanner input= new Scanner(System.in);
+
+        System.out.print("Bir sayi giriniz: ");
+
+        int sayi=input.nextInt();
+
+        int fakt=1;
+
+        for(int i=1;i<=sayi; i++){
+            fakt=fakt*i;
+        }
+        System.out.print("Girilen sayının faktöriyeli: "+fakt);
+    }
+}
