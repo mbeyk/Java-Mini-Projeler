@@ -1,0 +1,22 @@
+//Bu örnekte metot kullanılarak toplama işlemi yapılmıştır.
+
+//NOTLAR:
+//Metotlar mainin dışında tanımlanır ve main içinde adları ile çağırılırlar.
+//Örnekte parametreli metot kullanılmıştır, parametresiz türleri de vardır.
+//x ve y olarak iki parametre almıştır. Bunlar toplanacak sayıları ifade eder.
+//Main içerisinde metodun return edeceği değeri n adlı bir değişkene atadık. Böylece daha rahat bir şekilde yazdırma işlemi gerçekleşti. 
+
+public class Main{
+    public static void main(String[] args){
+        
+        int n;
+        n=topla(10,10);
+        System.out.print("Toplam: "+n);
+    }
+
+    static int topla(int x, int y){ 
+        int toplam=x+y;
+        return toplam;
+    }
+    
+}
